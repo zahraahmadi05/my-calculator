@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body class="min-h-screen grid place-items-center bg-gray-100">
+    <main class="w-72">
+      <div class="bg-white rounded-2xl p-2 shadow">
+        <input
+          id="display"
+          readonly
+          dir="ltr"
+          aria-label="Screen"
+          class="w-full text-right text-2xl p-4 bg-[#ffeb3b] rounded-2xl text-[#333]"
+        />
+        <div class="grid grid-cols-4 gap-2 mt-4">
+          <button
+            class="col-span-1 h-14 bg-[#03a9f4] text-2xl rounded-2xl text-white"
+            onclick="clearDisplay()"
+          >
+            C
+          </button>
+          <button
+            onclick="append('/')"
+            class="h-14 bg-[#ff9800] text-2xl rounded-2xl text-white"
+          >
+            /
+          </button>
+          <button
+            onclick="append('*')"
+            class="h-14 bg-[#ff9800] text-2xl rounded-2xl text-white"
+          >
+            *
+          </button>
+          <button
+            onclick="append('-')"
+            class="h-14 bg-[#ff9800] text-2xl rounded-2xl text-white"
+          >
+            -
+          </button>
+
+          <button
+            onclick="append('7')"
+            class="h-14 bg-amber-300 text-2xl rounded-2xl"
+          >
+            7
+          </button>
+          <button
+            onclick="append('8')"
+            class="h-14 bg-amber-300 text-2xl rounded-2xl"
+          >
+            8
+          </button>
+          <button
+            onclick="append('9')"
+            class="h-14 bg-amber-300 text-2xl rounded-2xl"
+          >
+            9
+          </button>
+          <button
+            onclick="append('+')"
+            class="h-14 bg-[#ff9800] text-2xl rounded-2xl text-white"
+          >
+            +
+          </button>
+
+          <button
+            onclick="append('4')"
+            class="h-14 bg-amber-300 text-2xl rounded-2xl"
+          >
+            4
+          </button>
+          <button
+            onclick="append('5')"
+            class="h-14 bg-amber-300 text-2xl rounded-2xl"
+          >
+            5
+          </button>
+          <button
+            onclick="append('6')"
+            class="h-14 bg-amber-300 text-2xl rounded-2xl"
+          >
+            6
+          </button>
+          <button
+            onclick="calculate('=')"
+            class="row-span-2 bg-[#ff9800] text-2xl rounded-2xl text-white"
+          >
+            =
+          </button>
+          <button
+            onclick="append('1')"
+            class="h-14 bg-amber-300 text-2xl rounded-2xl"
+          >
+            1
+          </button>
+          <button
+            onclick="append('2')"
+            class="h-14 bg-amber-300 text-2xl rounded-2xl"
+          >
+            2
+          </button>
+          <button
+            onclick="append('3')"
+            class="h-14 bg-amber-300 text-2xl rounded-2xl"
+          >
+            3
+          </button>
+
+          <button
+            onclick="append('0')"
+            class="h-14 bg-amber-300 text-2xl rounded-2xl"
+          >
+            0
+          </button>
+          <button
+            onclick="append('.')"
+            class="h-14 bg-amber-400 text-2xl rounded-2xl"
+          >
+            .
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
