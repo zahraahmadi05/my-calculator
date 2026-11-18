@@ -40,7 +40,7 @@
 
 # Screenshot
 
-# ![screenshot](img/Screenshot (372).png)
+# ![screenshot](<img/Screenshot (372).png>)
 
 # License
 
