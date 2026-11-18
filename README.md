@@ -38,6 +38,10 @@
 
 ## Each button appends its value to the display. Pressing = validates the expression with a regular expression (only digits and + - \* / . ( ) are allowed) and then evaluates it. Invalid input or division by zero shows Error.
 
+# Screenshot
+
+# ![screenshot](img/Screenshot (372).png)
+
 # License
 
 ## This project is licensed under the license included in the LICENSE file.
